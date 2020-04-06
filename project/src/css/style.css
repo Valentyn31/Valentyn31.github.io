@@ -1,0 +1,20 @@
+.section {
+  background-color: #211b1b;
+  height: 150px;
+}
+.section .fa-dumbbell {
+  font-size: 75px;
+  color: gray;
+}
+.col-lg-1 {
+  padding: 0px;
+  margin-top: 35px;
+}
+.site-name {
+  font-size: 20px;
+  color: #efd10f;
+}
+.fa-instagram {
+  font-size: 10px;
+  color: white;
+}
