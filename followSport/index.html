@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Sport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="block-logo-and-btn">
+                <a href="index.html" class="logo-block" title="home">
+                    <div class="header-logo" id="logo-url">
+                        <span class="header-logo__abr">FS</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-text__spann">Follow</span>
+                        <span class="logo-text__spann">Sport</span>
+                    </div>
+                </a>
+                <!-- ./logo -->
+                <div class="login-button">
+                    <button class="log-btn" title="login">Увійти</button>
+                </div>
+                <!-- ./login button -->
+            </div>
+            <!-- ./logo and button -->
+            <nav class="menu-nav">
+                <a href="#" class="menu-nav__url active_nav" title="home">Головна</a>
+                <a href="traning.html" class="menu-nav__url" title="traning">Тренування</a>
+                <a href="#" class="menu-nav__url" title="feeding">Харчування</a>
+                <a href="#" class="menu-nav__url" title="shop">Маркет</a>
+            </nav>
+            <!-- ./menu-nav -->
+        </div>
+        <!-- container -->
+    </header>
+    <!-- ./header -->
+    <main>
+        <div class="container main-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="promo swiper-slide promo-about-me">
+                        <div class="promo-text-block">
+                            <h1 class="promo-header">Follow Sport -</h1>
+                            <p class="promo-text">Спортивний клуб, заснований<br>
+                                Матвіюком Віталієм з метою допомогти вам<br>розвиватися,
+                                прокачуючи своє тіло, здоров’я<br>та навички!
+                                Бажаєш стати кращим? Приєднуйся<br>до двіжу і прогресуй!
+                                З нашими програмами тренувань і
+                                харчування ти досягнеш максимуму результатів!
+                            </p>
+                        </div>
+                        <!-- ./promo text -->
+                        <div class="promo-btn-block">
+                            <a href="#" class="promo-btn">Дізнатись більше</a>
+                        </div>
+                        <!-- ./promo-btn -->
+                    </div>
+                    <!-- ./promo -->
+                    <div class="promo swiper-slide promo-reg">
+                        <div class="promo-text-block">
+                            <h1 class="promo-header">Заведи аккаунт!</h1>
+                            <p class="promo-text">Привіт! При вході на сайт першим ділом
+                                зареєструйся або увійди. Це дозволить тобі
+                                здійснювати покупки, і бачити їх наявність у своєму профілі.
+                                У профілі ти також знайдеш інформацію про придбані тарифи.
+                                Хіба не чудово? Мершій реєструйся :)
+                                <br>
+                            </p>
+                        </div>
+                        <!-- ./promo text -->
+                        <div class="login-button" id="promo-login-btn">
+                            <button class="log-btn" title="login">Увійти</button>
+                        </div>
+                        <!-- ./promo-btn -->
+                    </div>
+                    <!-- ./promo -->
+                    <div class="promo swiper-slide promo-buy-full">
+                        <div class="promo-text-block">
+                            <h1 class="promo-header">Купуй вигідно</h1>
+                            <p class="promo-text">Придбавши тариф "Full" ти отримаєш
+                                не тільки програми тренування, харчування 
+                                і підтримку від нас за знижкою, а ще 
+                                й знижку 5% на наступну покупку не тільки
+                                тарифу, а й товарів з маркету. І ще невеличкий 
+                                сюрприз - фірмовий силіконовий браслет з логотипом нашого клубу
+                                у подарунок! Вибір за тобою!
+                            </p>
+                        </div>
+                        <!-- ./promo text -->
+                    </div>
+                    <!-- ./promo -->
+                </div>
+            </div>
+            <!-- ./swiper container -->
+            <div class="tarifs">
+                <div class="tarifs-header animate__animated animate__bounceInLeft wow">
+                    <h1>Хочеш прогресувати максимально швидко?</h1>
+                </div>
+                <!-- ./tarifs header -->
+                <div class="cards">
+                    <div class="card animate__animated animate__fadeInBottomLeft animate__slow wow" 
+                    id="first-card">
+                        <div class="shadow"></div>
+                        <div class="front">
+                            <div class="card-tarif">
+                                <h4 class="tarif-header">Тариф</h4>
+                                <h4 class="tarif-plan">“Тренування”</h4>
+                            </div>
+                            <div class="card-price-block">
+                                <span class="card-price">180 ₴</span>
+                            </div>
+                            <div class="card-buy-btn__block">
+                                <a href="#" class="card-buy-btn">Придбати</a>
+                            </div>
+                            <div class="card-open-btn__block" id="f-open-btn">
+                                <img class="card-open-btn" src="img/Vector.svg" alt="?">
+                            </div>
+                        </div>
+                        <!-- front -->
+                        <div class="back">
+                            <span class="card-back__text">
+                                Обравши цей тариф ви отримуєте:<br>
+                                1) Індивідуальну програму тренувань,
+                                розроблену для досягнення
+                                саме ваших цілей.<br>
+                                2) Постійну підтримку на протязі 1 місяця. Ми
+                                допоможемо вам регулювати вагу та навантаження
+                                і надамо відеогайди по техніці виконання вправ
+                            </span>
+                            <span id="card-close-btn1" style="color: rgb(58, 55, 55); font-size: 28px; cursor: pointer;">
+                                &#10006;
+                            </span>
+                        </div>
+                        <!-- ./back -->
+                    </div>
+                    <!-- ./first card -->
+                    <div class="card animate__animated animate__fadeInUp animate__delay-1s animate__fast wow" 
+                    id="second-card">
+                        <div class="shadow"></div>
+                        <div class="front">
+                            <div class="card-tarif">
+                                <h4 class="tarif-header">Тариф</h4>
+                                <h4 class="tarif-plan">“Харчування”</h4>
+                            </div>
+                            <div class="card-price-block">
+                                <span class="card-price">150 ₴‎</span>
+                            </div>
+                            <div class="card-buy-btn__block">
+                                <a href="#" class="card-buy-btn">Придбати</a>
+                            </div>
+                            <div class="card-open-btn__block" id="s-open-btn">
+                                <img class="card-open-btn" src="img/Vector.svg" alt="?">
+                            </div>
+                        </div>
+                        <!-- front -->
+                        <div class="back">
+                            <span class="card-back__text">
+                                Обравши цей тариф ви отримуєте:<br>
+                                1) Індивідуальну програму харчування,
+                                розроблену для досягнення саме ваших цілей.<br>
+                                2) Постійну підтримку на протязі 1 місяця. Ми
+                                допоможемо корегувати ваш раціон, 
+                                розрахувати калорійність,
+                                залежно від вашого стилю життя, тренувать. Та ін.                                
+                            </span>
+                            <span id="card-close-btn2" style="color: rgb(58, 55, 55); font-size: 28px; cursor: pointer;">
+                                &#10006;
+                            </span>
+                        </div>
+                        <!-- ./back -->
+                    </div>
+                    <!-- ./second card -->
+                    <div class="card animate__animated animate__fadeInBottomRight animate__slow wow" 
+                    id="third-card">
+                        <div class="shadow"></div>
+                        <div class="front">
+                            <div class="card-tarif">
+                                <h4 class="tarif-header">Тариф</h4>
+                                <h4 class="tarif-plan">“Full”</h4>
+                            </div>
+                            <div class="card-price-block">
+                                <span class="card-price">270 ₴‎</span>
+                            </div>
+                            <div class="card-buy-btn__block">
+                                <a href="#" class="card-buy-btn">Придбати</a>
+                            </div>
+                            <div class="card-open-btn__block" id="t-open-btn">
+                                <img class="card-open-btn" src="img/Vector.svg" alt="?">
+                            </div>
+                        </div>
+                        <!-- front -->
+                        <div class="back">
+                            <span class="card-back__text">
+                                Обравши цей тариф ви отримуєте:<br>
+                                1) Індивідуальні програми тренування та харчування,
+                                розроблені для досягнення саме ваших цілей.<br>
+                                2) Постійну підтримку на протязі 1 місяця. Вона включає
+                                допомогу з вирішенням будь-яких питань, що стосуються
+                                ваших тренувань та дієти. 
+                            </span>
+                            <span id="card-close-btn3" style="color: rgb(58, 55, 55); font-size: 28px; cursor: pointer;">
+                                &#10006;
+                            </span>
+                        </div>
+                        <!-- ./back -->
+                    </div>
+                    <!-- ./third card -->
+                </div>
+                <!-- ./cards -->
+                <div class="tarifs-end-text">
+                    <span class="final-card-text animate__animated animate__zoomIn animate__delay-2s animate__slow wow">
+                        Ми створимо для тебе індивідуальну програму<br>
+                        тренувань! Просто обери комфортний тариф!
+                    </span>
+                </div>
+                <!-- ./end text -->
+                <div class="tarifs-block__background"></div>
+                <!-- background -->
+            </div>
+            <!-- ./tarifs -->
+            <div class="ending animate__animated animate__zoomIn animate__slow wow">
+                <div class="ending-content animate__animated animate__fadeInLeft animate__delay-1s wow">
+                    <span class="ending-content__text">Приєднуйся до нас<br>
+                        та слідуй за спортом!<br>
+                        Будь strong!
+                    </span>
+                    <div class="ending-logo">
+                        <span class="ending-logo__abr">FS</span>
+                    </div>
+                    <div class="respect-block">
+                        <span class="respect">З повагою, команда <a class="ending-url" href="#">Follow Sports</a></span>
+                    </div>
+                </div>
+                <!-- ./ending-content -->
+                <div class="ending-img__block animate__animated animate__fadeInRight animate__delay-1s wow">
+                    <img src="img/image.png" alt="my photo" class="ending-img">
+                </div>
+                <!-- ./ending-img -->
+            </div>
+            <!-- ./ending -->
+        </div>
+        <!-- ./container -->
+    </main>
+    <!-- ./main -->
+    <div class="modal-login">
+        <div class="modal-login-dialog">
+            <div class="modal-dialog-login-head">
+                <span class="login-head">
+                    Авторизація
+                </span>
+                <button class="dialog-close__btn"><span class="dialog-close-btn__x">&#215;</span></button>
+            </div>
+            <div class="login-form-block">
+                <form action="" class="login-form" method="POST">
+                    <span class="login-form-span">Логін</span>
+                    <input type="text" class="login-form-input input__login">
+                    <span class="login-form-span">Пароль</span>
+                    <input type="password" class="login-form-input input__password">
+                    <input type="submit" class="input__submit" value="Увійти">
+                </form>
+            </div>
+            <a href="#" id="forgot-password" style="margin-bottom: 50px;">Забули пароль?</a>
+            <span class="plese-reg">
+                Або <a href="#" class="register-url">зареєструйтесь</a>
+            </span>
+        </div>
+        <!-- ./modal  -->
+    </div>
+    <!-- ./modal login -->
+    <div class="modal-register">
+        <div class="modal-register-dialog">
+            <div class="modal-dialog-register-head">
+                <span class="register-head">
+                    Реєстрація
+                </span>
+                <button class="dialog-close__btn" id="reg-close-btn"><span class="dialog-close-btn__x">&#215;</span></button>
+            </div>
+            <form action="" class="register-form" method="POST">
+                <span class="reg-form-span">Електронна пошта</span>
+                <input type="text" class="reg-form-input input__email">
+                <span class="reg-form-span">Номер телефону</span>
+                <input type="number" class="reg-form-input input__number">
+                <span class="reg-form-span">Логін</span>
+                <input type="text" class="reg-form-input input__login">
+                <span class="reg-form-span">Пароль</span>
+                <input type="password" class="reg-form-input input__password">
+                <input type="submit" class="input__submit" value="Створити">
+            </form>
+        </div>
+        <!-- ./modal  -->
+    </div>
+    <!-- ./modal register -->
+    <div class="modal-forgot">
+        <div class="modal-forgot-dialog">
+            <div class="modal-dialog-forgot-head">
+                <span class="forgot-head">
+                    Відновлення
+                </span>
+                <button class="dialog-close__btn" id="got-close-btn"><span
+                        class="dialog-close-btn__x">&#215;</span></button>
+            </div>
+            <form action="" class="forgot-form" method="POST">
+                <span class="got-form-span">Електронна пошта</span>
+                <input type="text" class="got-form-input input__email">
+                <span class="got-form-span">Номер телефону</span>
+                <input type="number" class="got-form-input input__number">
+                <input type="submit" class="input__submit" value="Відправити">
+            </form>
+        </div>
+        <!-- ./modal  -->
+    </div>
+    <!-- ./modal forgot -->
+    <footer>
+        <div class="container footer-container">
+            <a href="#logo-url" style="text-decoration: none;">
+                <div class="footer-logo-block">
+                    <div class="footer-logo wow">
+                        <span class="footer-logo__abr">FS</span>
+                    </div>
+                    <div class="footer-logo-text-block">
+                        <span class="footer-logo__text">Follow</span>
+                        <span class="footer-logo__text">Sport</span>
+                    </div>
+                </div>
+            </a>
+            <!-- logo -->
+            <nav class="footer-menu-nav">
+                <a href="#" class="footer-nav__link">Новини</a>
+                <a href="#" class="footer-nav__link">Контакти</a>
+                <a href="#" class="footer-nav__link">Маркет</a>
+                <a href="#" class="footer-nav__link">Про нас</a>
+            </nav>
+            <!-- ./menu nav -->
+            <div class="footer-link__block">
+                <a class="footer-link" href="#"><img src="img/instagram.svg" alt="inst"></a>
+                <a class="footer-link" href="#"><img src="img/telegram.svg" alt="tel"></a>
+                <a class="footer-link" href="#"><img src="img/youtube.svg" alt="tube"></a>
+            </div>
+            <!-- footer link -->
+        </div>
+        <!-- ./container -->
+    </footer>
+    <!-- footer -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
