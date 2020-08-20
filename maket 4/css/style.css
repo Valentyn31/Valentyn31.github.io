@@ -342,7 +342,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 25px;
-  background-color: #3498db;
+  background-color: #337ab7;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -498,7 +498,7 @@ body {
   height: 50px;
   border-radius: 30px;
   margin-top: 31px;
-  background-color: #3498db;
+  background-color: #337ab7;
   color: white;
   border: none;
   cursor: pointer;
@@ -964,8 +964,8 @@ body {
 }
 
 .our-mentors-block {
-  height: 600px;
   width: 100%;
+  height: 600px;
 }
 
 .our-mentors-block .our-mentors-header {
@@ -1188,6 +1188,10 @@ body {
     height: 500px;
   }
 
+  .our-mentors-block {
+    height: 650px;
+  }
+
   .our-mentors-block img {
     width: 270px;
   }
@@ -1273,36 +1277,36 @@ body {
     height: 780px;
   }
 
-  .video-block .video-text {
-    font-size: 16px !important;
-    line-height: 22px !important;
-  }
-
-  .video-block iframe {
-    height: 420px !important;
-  }
-
-  .video-block .video-wraper {
-    -webkit-box-flex: 4;
-        -ms-flex: 4 1 420px;
-            flex: 4 1 420px;
-  }
-
-  .video-block iframe {
-    height: 310px !important;
-  }
-
-  .video-block .video-wraper {
-    -webkit-box-flex: 4;
-        -ms-flex: 4 1 310px;
-            flex: 4 1 310px;
-  }
-
   .video-block .video-header-block {
-    padding-top: 64px;
+    padding-top: 40px;
     -webkit-box-flex: 5;
-        -ms-flex: 5 1 20px;
-            flex: 5 1 20px;
+        -ms-flex: 5 1 40px;
+            flex: 5 1 40px;
+  }
+
+  .video-block .video-text-block {
+    -webkit-box-flex: 8;
+        -ms-flex: 8 1 120px;
+            flex: 8 1 120px;
+  }
+
+  .video-block .video-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .video-block iframe {
+    height: 400px !important;
+  }
+
+  .video-block .video-wraper {
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 400px;
+            flex: 3 1 400px;
+  }
+
+  .our-mentors-block {
+    height: 840px;
   }
 
   .our-mentors-block .mentors-img-block {
@@ -1441,15 +1445,7 @@ body {
   }
 
   .reviews-block {
-    height: 655px;
-  }
-
-  .reviews-block .reviews-text {
-    width: 455px;
-  }
-
-  .reviews-block {
-    height: 800px;
+    height: 700px;
   }
 
   .reviews-block .reviews-header {
@@ -1480,6 +1476,10 @@ body {
 
   .our-mentors-block .mentors-text-block .about-mentor-block {
     width: 560px;
+  }
+
+  .our-mentors-block {
+    height: 900px;
   }
 
   .contacts-block {
@@ -1660,6 +1660,10 @@ body {
     text-align: center;
   }
 
+  .reviews-block {
+    height: 750px;
+  }
+
   .reviews-slider .reviews-slide .reviews-text::before,
   .reviews-slider .reviews-slide .reviews-text::after {
     font-size: 14px;
@@ -1712,7 +1716,11 @@ body {
     text-align: center;
   }
 
-  .about-mentor-block {
+  .our-mentors-block {
+    height: 1200px;
+  }
+
+  .our-mentors-block .about-mentor-block {
     width: 290px !important;
   }
 
