@@ -251,11 +251,11 @@ body {
 }
 
 .header .menu-btn {
-  width: 44px;
-  height: 34px;
+  width: 40px;
+  height: 30px;
   background-color: #3498db;
   border-radius: 4px;
-  margin-left: 140px;
+  margin-left: 172px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +275,7 @@ body {
 
 .header .menu-btn .burger-line {
   display: inline-block;
-  width: 30px;
+  width: 24px;
   height: 2px;
   background-color: white;
   border-radius: 2px;
@@ -286,7 +286,7 @@ body {
 .header .menu-btn .burger-line::after {
   content: '';
   display: inline-block;
-  width: 30px;
+  width: 24px;
   height: 2px;
   background-color: white;
   border-radius: 2px;
@@ -294,13 +294,13 @@ body {
 }
 
 .header .menu-btn .burger-line::before {
-  left: calc(50% - 15px);
-  top: -7px;
+  left: calc(50% - 12px);
+  top: -6px;
 }
 
 .header .menu-btn .burger-line::after {
-  left: calc(50% - 15px);
-  bottom: -7px;
+  left: calc(50% - 12px);
+  bottom: -6px;
 }
 
 .menu-nav {
@@ -351,6 +351,7 @@ body {
           align-items: cneter;
   cursor: pointer;
   margin-bottom: 10px;
+  outline: none !important;
 }
 
 .header-btn a {
@@ -422,13 +423,13 @@ body {
   font-weight: 600;
   letter-spacing: -0.3px;
   margin-bottom: 10px;
-  color: #000000;
+  color: #333;
 }
 
 .form label {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-size: 15px;
   letter-spacing: -1px;
   position: relative;
@@ -436,7 +437,7 @@ body {
 
 .form label img {
   position: absolute;
-  top: 40%;
+  top: 6px;
   right: -11px;
 }
 
@@ -502,6 +503,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .form .submit-btn:hover {
@@ -516,7 +518,7 @@ body {
 
 .site-develop-header {
   font-weight: 400;
-  color: #000000;
+  color: #333;
   font-size: 33px;
 }
 
@@ -644,7 +646,7 @@ body {
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 0.5px;
-  color: #000000;
+  color: #333;
 }
 
 .courses-slider {
@@ -927,27 +929,27 @@ body {
 
 .video-block {
   width: 100%;
-  height: 846px;
+  min-height: 720px;
   background-color: #f7f7f7;
 }
 
 .video-block .video-header-block {
   padding-top: 64px;
-  -webkit-box-flex: 9;
-      -ms-flex: 9 1 20px;
-          flex: 9 1 20px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 150px;
+          flex: 5 1 150px;
 }
 
 .video-block .video-header-block .video-header {
   font-weight: 500;
-  color: #000000;
+  color: #333;
   font-size: 34px;
 }
 
 .video-block .video-text-block {
-  -webkit-box-flex: 10;
-      -ms-flex: 10 1 80px;
-          flex: 10 1 80px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 160px;
+          flex: 1 1 160px;
 }
 
 .video-block .video-text-block .video-text {
@@ -958,9 +960,9 @@ body {
 }
 
 .video-block .video-wraper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 572px;
-          flex: 0 1 572px;
+  -webkit-box-flex: 7;
+      -ms-flex: 7 1 572px;
+          flex: 7 1 572px;
 }
 
 .our-mentors-block {
@@ -989,6 +991,18 @@ body {
   margin-left: 2px;
   margin-bottom: 45px;
   color: #3498db;
+  position: relative;
+}
+
+.our-mentors-block .mentors-text-block .mentors-slider-header::after {
+  content: '';
+  display: inline-block;
+  width: 98%;
+  height: 1px;
+  background-color: #f7f7f7;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }
 
 .our-mentors-block .mentors-text-block .about-mentor-block {
@@ -1179,19 +1193,35 @@ body {
   }
 
   .video-block {
-    height: 900px;
+    min-height: 680px;
+  }
+
+  .video-block .video-header-block {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 110px;
+            flex: 2 1 110px;
+    padding-top: 40px;
+  }
+
+  .video-block .video-text-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 180px;
+            flex: 1 1 180px;
   }
 
   .video-block .video-wraper {
-    -webkit-box-flex: 5;
-        -ms-flex: 5 1 502px;
-            flex: 5 1 502px;
+    -webkit-box-flex: 6;
+        -ms-flex: 6 1 562px;
+            flex: 6 1 562px;
     width: 100%;
   }
 
   .video-block .video-wraper iframe {
     width: 100%;
-    height: 500px;
+  }
+
+  .our-mentors-block .mentors-text-block .mentors-slider-header::after {
+    bottom: -10px;
   }
 
   .our-mentors-block {
@@ -1237,7 +1267,7 @@ body {
   }
 
   .reviews-block {
-    height: 555px;
+    height: 470px;
   }
 
   .reviews-block .reviews-header {
@@ -1246,6 +1276,7 @@ body {
 
   .reviews-block .reviews-text {
     width: 650px;
+    line-height: 24px !important;
   }
 
   .reviews-block .reviews-text br {
@@ -1258,7 +1289,7 @@ body {
   }
 
   .reviews-slider {
-    height: 410px;
+    height: 330px;
   }
 
   .our-mentors-slider .our-mentors-slide {
@@ -1280,20 +1311,20 @@ body {
   }
 
   .video-block {
-    height: 780px;
+    min-height: 600px;
   }
 
   .video-block .video-header-block {
     padding-top: 40px;
     -webkit-box-flex: 5;
-        -ms-flex: 5 1 40px;
-            flex: 5 1 40px;
+        -ms-flex: 5 1 120px;
+            flex: 5 1 120px;
   }
 
   .video-block .video-text-block {
-    -webkit-box-flex: 8;
-        -ms-flex: 8 1 120px;
-            flex: 8 1 120px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 230px;
+            flex: 1 1 230px;
   }
 
   .video-block .video-text {
@@ -1302,13 +1333,13 @@ body {
   }
 
   .video-block iframe {
-    height: 400px !important;
+    height: 420px !important;
   }
 
   .video-block .video-wraper {
-    -webkit-box-flex: 3;
-        -ms-flex: 3 1 400px;
-            flex: 3 1 400px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 470px;
+            flex: 1 1 470px;
   }
 
   .our-mentors-block {
@@ -1340,6 +1371,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     align-items: center;
+  }
+
+  .our-mentors-block .mentors-text-block .mentors-slider-header {
+    width: 100%;
   }
 }
 
@@ -1416,6 +1451,11 @@ body {
     height: 145px;
   }
 
+  .header .header-logo img {
+    width: 55px;
+    height: 55px;
+  }
+
   .course-block {
     height: 1000px;
   }
@@ -1447,11 +1487,12 @@ body {
   .courses .course-card-text {
     width: 230px;
     height: 300px;
+    line-height: 20px !important;
     overflow: hidden;
   }
 
   .reviews-block {
-    height: 700px;
+    height: 500px;
   }
 
   .reviews-block .reviews-header {
@@ -1460,28 +1501,49 @@ body {
   }
 
   .reviews-block .reviews-text {
-    width: 290px;
-    font-size: 14px !important;
+    width: 420px;
+    font-size: 16px !important;
   }
 
   .courses-slider .slick-dots {
     bottom: 0px;
   }
 
-  .reviews-slider {
-    height: 510px;
+  .reviews-slider .reviews-slide .reviews-text::before,
+  .reviews-slider .reviews-slide .reviews-text::after {
+    font-size: 22px;
   }
 
   .reviews-slider {
-    height: 580px;
+    height: 380px;
   }
 
   .our-mentors-slider {
     height: 770px !important;
   }
 
+  .video-block {
+    min-height: 400px;
+  }
+
+  .video-block .video-text-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+  }
+
+  .video-block iframe {
+    height: 308px !important;
+  }
+
+  .video-block .video-wraper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 350px;
+            flex: 1 1 350px;
+  }
+
   .our-mentors-block .mentors-text-block .about-mentor-block {
-    width: 560px;
+    width: 550px;
   }
 
   .our-mentors-block {
@@ -1504,12 +1566,13 @@ body {
   }
 
   .container {
-    width: 290px;
+    width: 310px;
     padding-right: 0;
     padding-left: 0;
   }
 
   .header-container {
+    width: 310px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1588,20 +1651,21 @@ body {
   }
 
   .course-block {
-    height: 1120px;
+    height: 1060px;
   }
 
   .course-left-block {
     width: 100%;
-    padding-top: 136px;
+    padding-top: 20px !important;
   }
 
   .course-left-block .course-header {
-    font-size: 20px;
-    width: 265px;
+    font-size: 24px;
+    width: 295px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 15px;
+    font-weight: 600;
   }
 
   .course-left-block .course-text {
@@ -1613,28 +1677,57 @@ body {
     display: none;
   }
 
+  .form label[for="aggry"] {
+    font-size: 15px;
+    width: 200px;
+  }
+
   .form label[for="aggry"] img {
-    -webkit-transform: translate(-160px, 10px);
-        -ms-transform: translate(-160px, 10px);
-            transform: translate(-160px, 10px);
+    -webkit-transform: translate(-95px, 15px);
+        -ms-transform: translate(-95px, 15px);
+            transform: translate(-95px, 15px);
+  }
+
+  .form label:not(:last-child) {
+    margin-left: 10px;
+  }
+
+  .form .form-radio-cheack input {
+    margin-left: 10px;
+  }
+
+  .form .submit-btn {
+    width: 290px;
   }
 
   .form {
     width: 100%;
-    margin-left: 0;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .form .form-header {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .form .text-input {
+    width: 96%;
+    height: 44px;
   }
 
   .site-develop {
-    height: 530px;
+    height: 545px;
   }
 
   .site-develop .site-develop-header {
     width: 100%;
     font-size: 24px;
+    padding-left: 25px;
   }
 
   .courses {
-    height: 420px;
+    height: 410px;
   }
 
   .courses .course {
@@ -1643,21 +1736,29 @@ body {
 
   .courses .course-title {
     width: 290px;
+    padding-bottom: 5px !important;
   }
 
   .courses .course-card-text {
-    width: 290px;
+    width: 280px;
     height: 300px;
     overflow: hidden;
+    line-height: 22px !important;
   }
 
   .aboutcourses {
-    height: 482px;
+    height: 330px;
+    padding-top: 10px;
   }
 
   .aboutcourses .aboutcourses-item {
-    height: 190px;
+    height: 165px;
     width: 145px;
+    padding-top: 5px;
+  }
+
+  .aboutcourses .aboutcourses-item img {
+    margin-bottom: 10px;
   }
 
   .aboutcourses .aboutcourses-item .statistic-info {
@@ -1666,8 +1767,24 @@ body {
     text-align: center;
   }
 
+  .aboutcourses .aboutcourses-item .statistic-number {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
   .reviews-block {
-    height: 750px;
+    height: 570px;
+    padding-top: 35px;
+  }
+
+  .reviews-block .reviews-header {
+    font-size: 26px;
+  }
+
+  .reviews-block .reviews-text {
+    width: 290px;
+    font-size: 14px !important;
+    font-weight: 200;
   }
 
   .reviews-slider .reviews-slide .reviews-text::before,
@@ -1676,43 +1793,51 @@ body {
   }
 
   .reviews-slider .reviews-slide .reviews-text::before {
-    left: -4px;
+    left: -2px;
   }
 
   .reviews-slider .reviews-slide .reviews-text::after {
-    right: 0px;
-    bottom: 10px;
+    right: -5px;
+    bottom: -18px;
+  }
+
+  .reviews-slider {
+    height: 440px;
   }
 
   .our-mentors-slider {
-    height: 1100px !important;
+    height: 820px !important;
   }
 
   .video-block {
-    height: 800px;
+    min-height: 320px;
   }
 
   .video-block iframe {
-    height: 160px !important;
+    height: 190px !important;
   }
 
   .video-block .video-wraper {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 160px;
-            flex: 1 1 160px;
+        -ms-flex: 1 1 230px;
+            flex: 1 1 230px;
   }
 
   .video-block .video-header-block {
-    padding-top: 64px;
+    padding-top: 55px;
     -webkit-box-flex: 2;
-        -ms-flex: 2 1 20px;
-            flex: 2 1 20px;
+        -ms-flex: 2 1 110px;
+            flex: 2 1 110px;
+  }
+
+  .video-block .video-header-block h1 {
+    font-size: 28px !important;
   }
 
   .video-block .video-text-block {
     -webkit-box-flex: 6;
-        -ms-flex: 6 1 80px;
-            flex: 6 1 80px;
+        -ms-flex: 6 1 420px;
+            flex: 6 1 420px;
   }
 
   .video-block .video-text-block .video-text {
@@ -1723,19 +1848,42 @@ body {
   }
 
   .our-mentors-block {
-    height: 1200px;
+    height: 980px;
+  }
+
+  .our-mentors-block .our-mentors-header {
+    font-size: 28px;
+  }
+
+  .our-mentors-block .mentors-img-block img {
+    width: 150px;
   }
 
   .our-mentors-block .about-mentor-block {
     width: 290px !important;
+    line-height: 20px !important;
+  }
+
+  .contacts-block {
+    height: 300px;
   }
 
   .contacts-block .contacts-item {
-    height: 150px;
+    height: 140px;
     width: 145px;
   }
 
-  .contacts-block #bug-span {
-    margin-left: -30px;
+  .contacts-block svg {
+    margin-bottom: 8px !important;
+    width: 30px;
+  }
+
+  .contacts-block .contact-header {
+    font-size: 14px !important;
+    margin-bottom: 4px;
+  }
+
+  .contacts-block .contact-url {
+    font-size: 12px !important;
   }
 }
