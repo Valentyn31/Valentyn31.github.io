@@ -233,8 +233,8 @@ body {
   position: fixed;
   top: 0;
   z-index: 2;
-  -webkit-box-shadow: 0px -10px 20px #615857;
-          box-shadow: 0px -10px 20px #615857;
+  -webkit-box-shadow: 0px 2px 30px #7c8a9c;
+          box-shadow: 0px 2px 30px #7c8a9c;
   background-color: white;
 }
 
@@ -1083,6 +1083,12 @@ body {
 
 .footer .policy:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 1545px) {
+  .menu-nav {
+    margin-left: 350px;
+  }
 }
 
 @media (max-width: 1230px) {
