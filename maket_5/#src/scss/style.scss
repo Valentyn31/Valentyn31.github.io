@@ -16,4 +16,104 @@
 }
 
 @import "fonts";
+@import "colors";
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: SourceSansProRegular;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+.home {
+    width: 100%;
+    min-height: 628px;
+    background: $darkbg url(../img/photo.png) no-repeat 1px -11px;
+}
+
+.header {
+
+    &__row {
+        padding-top: 8px;
+    }
+    &__logo{
+        padding: 0;
+        color: $white;
+        transform: translateY(3px);
+    }
+    &__lucid {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        line-height: 58px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    &__subtitle {
+        display: inline-block;
+        width: 44px;
+        opacity: 0.3;
+        color: $white;
+        font-size: 9px;
+        line-height: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.26px;
+    }
+    &__menu-nav {
+        padding: 0;
+        @include flex;
+        justify-content: flex-end;
+    }
+    &__link {
+        font-size: 16px;
+        font-family: SourceSansProSemiBold;
+        line-height: 58px;
+        color: #fffefe;
+        padding-bottom: 2px;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 23.4px;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    .active-link {
+        text-decoration: none;
+        color: $white;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 2px;
+            bottom: 10px;
+            display: inline-block;
+            width: 48%;
+            height: 2px;
+            background-color: $activeunderline;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -2px;
+            bottom: 10px;
+            display: inline-block;
+            width: 48%;
+            height: 2px;
+            background-color: $activeunderline;
+        }
+    }
+}
