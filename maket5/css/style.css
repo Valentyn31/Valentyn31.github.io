@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "SourceSansPro";
   font-display: swap;
@@ -94,9 +96,65 @@
   font-style: normal;
 }
 
+.slick-list {
+  overflow: hidden !important;
+}
+
+/* Лента слайдов */
+
+/* Точки (булиты) */
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 56px;
+  left: -20px;
+}
+
+.slick-dots li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+/* Активная точка */
+
+.slick-dots li.slick-active button {
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  margin-left: 0;
+}
+
+/* Элемент точки */
+
+.slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+}
+
+.slick-dots li button:focus {
+  outline: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -157,7 +215,7 @@ body {
 }
 
 .home__buttons .home__down-btn,
-.home__buttons .home__view-brn {
+.home__buttons .home__view-btn {
   width: 160px;
   height: 50px;
   outline: none;
@@ -175,7 +233,7 @@ body {
   border: none;
 }
 
-.home__buttons .home__view-brn {
+.home__buttons .home__view-btn {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: transparent;
   margin-left: 17px;
@@ -542,4 +600,95 @@ body {
   -webkit-transform: translateX(-32px);
       -ms-transform: translateX(-32px);
           transform: translateX(-32px);
+}
+
+.testimonials {
+  min-height: 640px;
+  background: #15141a url(../img/Warstwa_8.png) no-repeat 1px;
+  background-size: cover;
+}
+
+.testimonials__header {
+  padding-top: 47px;
+}
+
+.testimonials__smalltitle {
+  color: #008ed6;
+  font-size: 14px;
+  font-family: SourceSansProBold;
+  line-height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1.39px;
+  padding-left: 95px;
+}
+
+.testimonials__title {
+  color: #1a1a1a;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  padding-left: 56px;
+  color: #fff;
+  line-height: 20px;
+  letter-spacing: 1.36px;
+}
+
+.testimonials__plans {
+  padding-top: 120px;
+  min-width: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.testimonials__col:nth-child(odd) {
+  padding: 0;
+  -webkit-transform: translateX(-3px);
+      -ms-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+.testimonials__col:nth-child(even) {
+  padding-left: 13px;
+  margin-right: -25px;
+}
+
+.testimonials__text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  font-style: italic;
+  letter-spacing: -0.3px;
+  width: 540px;
+}
+
+.testimonials .user {
+  padding: 7px 0 0 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 280px;
+  color: #fff;
+}
+
+.testimonials .user__img {
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.testimonials .user__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.testimonials .user__specialization {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 0.35px;
 }
