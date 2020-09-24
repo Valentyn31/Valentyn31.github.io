@@ -1,0 +1,163 @@
+.news-slide.slick-slide{
+  width: 100%;
+  @include flex;
+  justify-content: space-between;
+
+  .info {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.news-slide {
+  &__category {
+    width: 270px;
+    height: 40px;
+    @include flex;
+    background-color: transparent;
+    border: 1px solid $darkgray;
+    border-radius: 36px;
+    font-size: 20px;
+    font-weight: 600;
+    color: $darkgray;
+  }
+
+  &__title {
+    margin-top: 21px;
+    font-weight: 300;
+    font-size: 38px;
+  }
+
+  &__paragraph {
+    width: 555px;
+    margin: 21px 0 31px;
+    font-size: 22px;
+    line-height: 26px;
+    color: $text;
+  }
+
+  &__btn {
+    background-color: $black !important;
+  }
+}
+
+@keyframes move-light {
+  from {transform: translateX(-6em) skewX(-45deg); }
+  to {transform: translateX(15em) skewX(-45deg); }
+}
+
+.news-slider {
+
+  .slick-dots {
+    @include flex;
+    margin: 0 auto;
+  }
+
+  .slick-dots li button{
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0 8px;
+    border: 2px solid $darkgray;
+    background: transparent;
+    transform: rotate(45deg);
+    font-size: 0;
+
+    &:hover {
+      border: 3px solid $red;
+      cursor: pointer;
+    }
+  }
+  
+  .slick-dots li.slick-active button{ 
+    border: none;
+    background-color: $darkgray;
+  }
+}
+
+.test-slider.slick-slider {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+
+  .draggable {
+    width: 100%;
+    height: 410px !important;
+  }
+}
+.test-slide.slick-slide {
+  width: 100%;
+  height: 410px;
+  padding: 0 20px;
+  @include flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: $white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+}
+.test-slider .slick-arrow.slick-prev {
+  display: none !important;
+}
+.test-slider .slick-arrow.slick-next {
+  width: 174px;
+  height: 56px;
+  margin-top: 27px;
+  margin-left: calc(50% - 87px);
+  background-color: $blue;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+/* Слайдер */
+.slick-slider {}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  //display: flex;
+}
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{ 
+  padding: 0;
+}
+
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
